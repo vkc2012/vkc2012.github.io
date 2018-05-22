@@ -7,19 +7,19 @@
 body { 
     font-size: 16px; 
     line-height: 32px;
-    font-family: fantasy, sans-serif;
-    color: #ffffff;
+    font-family:  'Roboto', sans-serif;;
+    color: #000000;
 }
 
 h1 {
     font-size:24px;
-    color: #294A66;
+    color: #ffffff;
 }
 
 h2 {
     font-size: 18px;
     text-align: center;
-    border-bottom: 1px solid #cc66ff;
+    border-bottom: 1px solid #33a6cc;
 }
 
 header, main, footer {
@@ -30,8 +30,8 @@ header, main, footer {
 
 header, footer, footer a {
     text-align: center;
-    background-color: #cc66ff;
-    color: whitesmoke;
+    background-color: #33a6cc;
+    color: #ffffff;
 }
 
 header img {
