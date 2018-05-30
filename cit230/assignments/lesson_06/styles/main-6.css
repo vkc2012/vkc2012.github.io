@@ -1,0 +1,63 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: 'Catamaran', Sans-Serif;  /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 600px; 
+  margin: 0 auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {}
+header h1 {
+    font-size: 22px;
+    font-family: 'Vollkorn', Serif;
+}
+header img {}
+header .subheading {}
+
+nav {}
+nav button {}
+nav ul {
+    list-style-type: 'Vollkorn', Serif;
+    margin: 4px;
+    padding: 2px;
+    overflow: hidden;
+    background-color: #8be0f6;}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+     background-color: #f9dc26;
+}
+nav ul li a:hover {
+     background-color: #ffd1d1;
+}
+
+main {}
+main h2 {
+    font-size: 18px;
+    font-family: 'Vollkorn', Serif;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+
+section.forecast {display: none}
+
+weather-summary {
+    
+}
+footer {}
+
