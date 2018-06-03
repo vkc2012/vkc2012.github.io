@@ -1,5 +1,4 @@
-/* Delete these CSS comments after reading. */
-/* This main css file contains the default rules and is geared toward the small/phone view */
+@media screen and (max-width:37.5em)
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
@@ -23,30 +22,31 @@ header .subheading {}
 
 nav {}
 nav button {}
-nav ul {
+.topnav {
     list-style-type: 'Vollkorn', Serif;
     margin: 4px;
     padding: 2px;
     overflow: hidden;
-    background-color: #8be0f6;}
-nav ul li {
+    background-color: #8be0f6;
     float: left;
     list-style-type: none;
 }
-nav ul li a {
+.topnav a {
     display: inline;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-nav ul li.active a {
+.active a {
      background-color: #f9dc26;
 }
-nav ul li a:hover {
+.topnav a:hover {
      background-color: #ffd1d1;
 }
-
+.topnave .icon {
+    display: none;
+}
 main {}
 main h2 {
     font-size: 18px;
@@ -60,5 +60,5 @@ section.forecast {display: none}
 weather-summary {
     
 }
-footer {}
+footer{}
 

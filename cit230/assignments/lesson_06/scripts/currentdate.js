@@ -1,5 +1,5 @@
-<script>
-    function myFunction() {
+<script type=text/javascript>    
+function myFunction() {
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
@@ -13,6 +13,6 @@
     var n = weekday[d.getDay()];
     document.getElementById("demo").innerHTML = n;
 }
-     var date = new date();
+     var date = new date();{
     document.getElementById("day").innerHTML = date.toDateString();
-</script>
+     }
