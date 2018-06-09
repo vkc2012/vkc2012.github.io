@@ -1,5 +1,5 @@
 @media only screen and (min-width: 64em ) {
-}
+
 
 nav {}
 nav button {}
@@ -25,3 +25,14 @@ nav ul li.active a {
 }
 nav ul li a:hover {
      background-color: #ffd1d1;
+    }
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+.wrapper> div{
+    background: #f9dc26;
+    padding: 2em #fdc513;
+}

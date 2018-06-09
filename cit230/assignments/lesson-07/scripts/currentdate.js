@@ -1,6 +1,5 @@
-<script type=text/javascript>    
-function myFunction() {
-    var d = new Date();
+function currentDay() {
+    var date = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday";
     weekday[1] = "Monday";
@@ -11,8 +10,7 @@ function myFunction() {
     weekday[6] = "Saturday";
 
     var n = weekday[d.getDay()];
-    document.getElementById("demo").innerHTML = n;
-}
-     var date = new date();{
-    document.getElementById("day").innerHTML = date.toDateString();
+    document.getElementById("day").innerHTML = n;
+
+    document.getElementById("currentDate").innerHTML = date.toDateString();
      }
