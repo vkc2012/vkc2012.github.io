@@ -28,11 +28,24 @@ nav ul li a:hover {
     }
 }
 .wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: inline-grid;
+    grid-template-columns: repeat(3 12px);
+    grid-template-rows: repeat(3 auto);
+    grid-gap: 6px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 2em #ffffff;
 }
 .wrapper> div{
-    background: #f9dc26;
-    padding: 2em #fdc513;
+       display: inline-grid;
+    grid-template-columns: repeat(3 12px);
+    grid-template-rows: repeat(3 auto);
+    grid-gap: 6px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 2em #ffffff;
 }
