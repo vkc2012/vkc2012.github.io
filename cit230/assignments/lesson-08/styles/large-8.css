@@ -1,12 +1,14 @@
 @media only screen and (min-width: 64em ) {
 
-
+.hamburger{ 
+    display:none;position: absolute;top: 2.0rem;right: 1.25rem;
+    }
 nav {}
 nav button {}
 nav ul {
     list-style-type: 'Vollkorn', Serif;
     margin: 4px;
-    padding: 2px;
+    padding: 10px;
     overflow: hidden;
     background-color: #8be0f6;}
 nav ul li {
@@ -15,6 +17,7 @@ nav ul li {
 }
 nav ul li a {
     display: inline;
+    font-size: 20px;
     color: black;
     text-align: center;
     padding: 14px 16px;
@@ -27,25 +30,15 @@ nav ul li a:hover {
      background-color: #ffd1d1;
     }
 }
-.wrapper{
+.wrapper {
     display: inline-grid;
-    grid-template-columns: repeat(3 12px);
-    grid-template-rows: repeat(3 auto);
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3, auto);
     grid-gap: 6px;
     justify-items: start; 
     align-items: start; 
     grid-auto-flow: row;
     background: #ffffff;
     padding: 2em #ffffff;
-}
-.wrapper> div{
-       display: inline-grid;
-    grid-template-columns: repeat(3 12px);
-    grid-template-rows: repeat(3 auto);
-    grid-gap: 6px;
-    justify-items: start; 
-    align-items: start; 
-    grid-auto-flow: row;
-    background: #ffffff;
-    padding: 2em #ffffff;
+    word-wrap: break-word;
 }
