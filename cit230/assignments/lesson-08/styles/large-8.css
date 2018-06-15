@@ -30,7 +30,24 @@ nav ul li a:hover {
      background-color: #ffd1d1;
     }
 }
-.wrapper {
+img:hover {
+    box-shadow: 5px 5px 10px #fdc513;
+    }
+.wrapperF {
+    display: inline-grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 30px #ffffff;
+    word-wrap: break-word;
+    border-style: solid;
+    border-color: #fdc513;
+}
+.wrapperG {
     display: inline-grid;
     grid-template-columns: repeat(3,33%);
     grid-template-rows: repeat(3, auto);

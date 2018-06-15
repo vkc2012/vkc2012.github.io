@@ -35,7 +35,13 @@ header .subheading {}
 .nav li { 
     display: none;
     }
-    
+    .navigation {
+        background-color: #eee;
+        display: block;	
+        width: 100%; 
+        margin: 2px 0;	
+        border: 1px solid #ddd; 
+    }
 .responsive { position: relative; }
 	.responsive li { 
         background-color: #eee;
@@ -66,7 +72,7 @@ main {}
     background:10px #ffffff ;
     padding: 2px #ffffff ;
 }
-img:hover {box-shadow: 5px 5px 10px #fdc513;}
+
 .wordwrap{
     word-wrap: break-word;
 }
