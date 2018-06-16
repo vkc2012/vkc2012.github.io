@@ -1,3 +1,8 @@
 function toggleHam() {
-	document.getElementsByClassName("hamburger")[0].classList.toggle("responsive");
+    var x = document.getElementById("hamburger");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }

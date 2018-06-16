@@ -21,7 +21,7 @@
   <header>
         <img src="images/franklin-original_large.jpeg" alt="Morning Sun" height="auto" width= "100%">
       	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
-  <nav>
+  <nav id="hamburger">
     <ul class="navigation">
     	<li><a href="#">Home</a></li>
     	<li><a href="#">Franklin</a></li>
@@ -51,7 +51,7 @@
     <section class="weather-summary">
       <h3>Weather Summary</h3>    
       <div class="highlow">
-        <p>High: 90&deg;F</p>  
+        <p>High:<span id="temperature">90</span>&deg;F</p>  
         <p>Low: 66&deg;F</p>  
       </div>
       <div class="current">
@@ -60,7 +60,8 @@
       </div>   
       <div class="conditions">
         <p>Chance Precipitation: 0&percnt;</p>  
-        <p>Wind Speed: 5 mph SW</p>  
+        <p>Wind Speed: <span id="windSpeed">5</span> mph SW</p>
+        <p>Wind Chill: <span id="wt"></span><script>doInputOutput();</script></p>
       </div>           
     </section>
         </div>
