@@ -11,7 +11,7 @@ function currentDay() {
     
     var n = weekday[date.getDay()];
     
-    Document.getElementById("day").innerHTML = n;
+    document.getElementById("day").innerHTML = n;
 
-    Document.getElementById("currentDate").innerHTML = date.toDateString();
+    document.getElementById("currentDate").innerHTML = date.toDateString();
 }
