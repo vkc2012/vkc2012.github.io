@@ -82,7 +82,20 @@ main h2 {
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { }
-
+.wrapperF {
+    display: inline-grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 30px #ffffff;
+    word-wrap: break-word;
+    border-style: none;
+    border-color: none;
+    }
 .wrapperG {
     display: inline-grid;
     grid-template-columns:repeat(1,100%);
