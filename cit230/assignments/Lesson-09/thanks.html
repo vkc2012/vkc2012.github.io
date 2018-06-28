@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head> 
   <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="weatherpage/valerie-christiansen" content="width=device-width, initial-scale=1">
     <title>Storm Center</title>
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/medium-9.css">
     <link rel="stylesheet" href="styles/large-9.css">
     <script src="scripts/hamburger.js"></script>
-    <script src ="script/currentdate.js"></script>
+    <script src="script/currentdate.js"></script>
     <script src="scripts/windhill.js"></script>
 
     
@@ -47,7 +47,7 @@
       123 Main St. Anytown, US 99999
       Google Map
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor | Day/Date <span id="currentDay"></span>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor |<span id="day"></span><script>currentDay();</script>
     </section>
   </footer>
 </body>

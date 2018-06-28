@@ -22,7 +22,9 @@ header h1 {
 }
 header img {}
 header .subheading {}
-
+img:hover {
+    box-shadow: none;
+    }
 
 .hamburger{ 
     display: ;position: absolute;top: 2.0rem;right: 1.25rem;
@@ -95,6 +97,21 @@ main figure img { }
     word-wrap: break-word;
     border-style: none;
     border-color: none;
+    }
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: ;
+    justify-content: flex-start;
+        
+    }
+.item{
+    order: <integer>;
+    flex-grow: <number>;
+    flex-shrink: <number>;
+    flex-basis: auto;
+    align-self: auto;
     }
 .wrapperG {
     display: inline-grid;
