@@ -1,0 +1,139 @@
+/* for all pages*/ 
+@media only screen and (max-width:37.5em){
+
+body {
+  font-size: 16px;
+  font-family: 'Catamaran', Sans-Serif;  /* Declare the base font-family */
+}
+
+header, nav, main, footer { 
+  max-width: 600px; 
+  margin: 5 auto;
+}
+
+.topimg {
+    position: absolute;
+    clip; rect(0px,50px,50px,0px)
+    }
+header h1 {
+    font-size: 22px;
+    font-family: 'Vollkorn', Serif;
+}
+header img {
+    margin: auto;
+    align-content: center;
+    width: 95%;
+    }
+header .subheading {}
+img:hover {
+    box-shadow: none;
+    }
+
+.hamburger{ 
+    display: ;position: absolute;top: 2.0rem;right: 1.25rem;
+    }
+    
+.nav { 
+    list-style: none; 
+    padding-left: 0;
+    }
+.nav li { 
+    display: none;
+    }
+    .navigation {
+        background-color: #eee;
+        display: block;	
+        width: 100%; 
+        margin: 2px 0;	
+        border: 1px solid #ddd; 
+    }
+.responsive { position: relative; }
+	.responsive li { 
+        background-color: #eee;
+        display: block;	
+        width: 100%; 
+        margin: 2px 0;	
+        border: 1px solid #ddd;
+    }
+	.responsive li a {	
+        padding: 1rem; 
+        text-align: center;	
+        display: block; 
+        text-decoration:none;
+    }
+	.responsive li a:hover {
+        background-color: #ddd; 
+    }
+
+main {}
+.wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    
+}
+.wrapper> div{
+    background:10px #ffffff ;
+    padding: 2px #ffffff ;
+}
+
+.wordwrap{
+    word-wrap: break-word;
+}
+main h2 {
+    font-size: 18px;
+    font-family: 'Vollkorn', Serif;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { }
+.wrapperF {
+    display: inline-grid;
+    grid-template-columns: repeat(1,100%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 30px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 30px #ffffff;
+    word-wrap: break-word;
+    border-style: none;
+    border-color: none;
+    }
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: ;
+    justify-content: flex-start;
+        
+    }
+.item{
+    order: <integer>;
+    flex-grow: <number>;
+    flex-shrink: <number>;
+    flex-basis: auto;
+    align-self: auto;
+    }
+.wrapperG {
+    display: inline-grid;
+    grid-template-columns:repeat(1,100%);
+    grid-template-rows: repeat(1, auto);
+    grid-gap: 6px;
+    justify-items: start; 
+    align-items: start; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 2em #ffffff;
+    word-wrap: break-word;
+}
+section.forecast {
+    
+}
+
+weather-summary {
+    display: hidden;
+}
+footer{}
+}

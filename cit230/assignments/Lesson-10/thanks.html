@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="weatherpage/valerie-christiansen" content="width=device-width, initial-scale=1">
+    <title>The Weather Factor</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="cit230/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src ="scripts/currentdate.js"></script>
+    <script src="scripts/windhill.js"></script>
+    <script src="scripts/api.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+        <img src="images/franklin-original_large.jpeg" alt="Morning Sun" height="auto" width= "100%">
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav id="hamburger">
+    <ul class="navigation">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+
+  </header>
+ <main id"thankyou">
+    <h1>Thank you for compleating the form.</h1>
+      <h3>Please chack back for regular updates.</h3>
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor |<span id="day"></span><script>currentDay();</script>
+    </section>
+  </footer>
+</body>
+</html>

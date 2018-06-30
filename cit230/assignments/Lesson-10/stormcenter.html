@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="weatherpage/valerie-christiansen" content="width=device-width, initial-scale=1">
+    <title>Storm Center</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="cit230/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src="script/currentdate.js"></script>
+    <script src="scripts/windhill.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+        <img src="images/franklin-original_large.jpeg" alt="Morning Sun" height="auto" width= "auto">
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav>
+    <ul>
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+
+  </header>
+
+    
+  <main>
+      <h2>Form</h2>
+        <div class="ablock">
+            <form id="data" method="post" action="thanks.html">
+                <fieldset>
+                <legend>
+                    <span>PERSONAL INFORMATION</span>
+                </legend>
+                <label>
+                    <span>FULL NAME&colon;</span>
+                    <input name="fullname" type="text" value placeholder="FULL NAME" pattern="[a-zA-Z-._]{5,99}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>PHONE&colon;</span>
+                    <input name="phone" type="tel" value placeholder="###-###-####" pattern="[0-9]{10}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>E&#45;MAIL&colon;</span>
+                    <input name="email" type="email" value placeholder="info@theweatherfactor.com" required>
+                </label>
+                    <br>
+                <label>
+                    <span>ZIP CODE&colon;</span>
+                    <input name="zip" type="number" value placeholder="#####" required>
+                </label>
+                </fieldset>
+                <fieldset>
+                <legend>
+                    <span>STORM INFORMATION</span>
+                </legend>
+                <lable>
+                    <span>STORM DATE&colon;</span>
+                    <input name="date" type="date" required>
+                </lable>
+                    <br>
+                <label>
+                    <span>STORM TYPE&colon;</span>
+                    <input class="info" type="text" name="stormtype" list="storms" placeholder="SELECT STORM TYPE">
+                    <datalist id="storms">
+                        <option value="Flooding"></option>
+                        <option value="Heavy Rain"></option>
+                        <option value="Heavy Snow"></option>
+                        <option value="High Winds"></option>
+                        <option value="Ice"></option>
+                        <option value="Severe Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                    <br>
+                <label class="info" for="severity">
+                    <span>SEVERITY &#40;1 to 10&#41;</span>
+                </label>
+                    <br>
+                    <input class="sInfo" type="range" id="severity" value="5" min="1" max="10" step="1" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                    <span id="serverityvalue">5</span>
+                <br>
+                <label class="info">
+                    <span>STORM REGION&colon;</span>
+                    <input class="sInfo" type="text" name="stormregion" list="regions" placeholder="SELECT REGION">
+                    <datalist id="regions">
+                        <option value="Franklin"></option>
+                        <option value="Greenville"></option>
+                        <option value="Springfield"></option>
+                    </datalist>
+                </label>
+                </fieldset>
+                <fieldset>
+                <legend>
+                    <span>ARE YOU IN DANGER&#63;</span>
+                </legend>
+                    <br>
+                    <input class="sinfo" type="radio" name="danger" value="no">
+                    "NO"
+                    <br>
+                    <input class="sinfo" type="radio" name="danger" value="maybe">
+                    "MAYBE"
+                    <br>
+                    <input class="sinfo" type="radio" name="danger" value="yes">
+                    "YES"
+                    <br>
+                    <textarea class="sinfo" rows="5" cols="60" name="comment" placeholder="Please include any information that might be relevant."></textarea>
+                </fieldset>
+                <br>
+                <input type="submit" value="SUBMIT" class="subButton">
+            </form>
+        </div>
+  
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor |<span id="day"></span><script>currentDay();</script>
+    </section>
+  </footer>
+</body>
+</html>

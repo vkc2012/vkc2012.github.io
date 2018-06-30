@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head> 
+  <meta charset="utf-8">
+    <meta name="weatherpage/valerie-christiansen" content="width=device-width, initial-scale=1">
+    <title>Springfield</title>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link rel="stylesheet" href="cit230/styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/hamburger.js"></script>
+    <script src ="scripts/currentdate.js"></script>
+    <script src="scripts/windhill.js"></script>
+
+    
+</head>
+<body>
+
+  <header>
+        <img src="images/franklin-original_large.jpeg" alt="Morning Sun" height="auto" width= "100%">
+      	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
+  <nav id="hamburger">
+    <ul class="navigation">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+
+  </header>
+
+    
+  <main>
+ <br>
+    <div class="wrapperF">
+    <div>
+    <h2>The Weather Factor</h2>
+     <picture>
+            <img src="images/jeremy-bishop-small.jpg" alt="Morning Sun" height="auto" width="100%">
+        </picture>
+        </div>
+        <div>
+    <figure>
+        
+    </figure>
+    <section class="weather-summary">
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High:<span id="temperature">90</span>&deg;F</p>  
+        <p>Low: 66&deg;F</p>  
+      </div>
+      <div class="current">
+        Sunny
+       
+      </div>   
+      <div class="conditions">
+        <p>Chance Precipitation: 0&percnt;</p>  
+        <p>Wind Speed: <span id="windSpeed">5</span> mph SW</p>
+        <p>Wind Chill: <span id="wt"></span><script>doInputOutput();</script></p>
+      </div>           
+    </section>
+        </div>
+        <div>
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	</tbody>
+      </table>
+    </section>
+        </div>
+        <div>
+    <article>
+      <h3>Franklin Breaks Record</h3>	
+      <img src="images/nicole-wilcox-small.jpg" alt="Rainbow" hight="auto" width=100%>
+      <p class="town-article">This is the filler text that says how wonderful the weather
+          has been in Franklin. Short story... It has been sunny and hot in Franklin. 
+          If you are planning on visiting any time soon we recomend that you brin you 
+          bathing suite, and some suntan loation. 
+      </p>
+    </article>	
+        </div>
+      </div>
+  </main>
+    
+  <footer>
+    <section class="contact">
+      Contact information placeholder
+      999.999.9999
+      123 Main St. Anytown, US 99999
+      Google Map
+    </section>
+      <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor | <span id="day"></span><script>currentDay();</script></section> 
+  </footer>
+</body>
+</html>
