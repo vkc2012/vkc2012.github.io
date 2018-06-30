@@ -126,11 +126,11 @@ main figure img { }
     word-wrap: break-word;
 }
 section.forecast {
-    display: none;
+    
 }
 
 weather-summary {
-    
+    display: hidden;
 }
 footer{}
 }
