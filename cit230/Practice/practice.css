@@ -1,0 +1,13 @@
+grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(3, auto);
+    
+}
+box {
+  width: 100%;
+    background-color: #fdc513;
+    padding: 1.5em;
+    color: #8be0f6;
+    font-size: 15px;
+}

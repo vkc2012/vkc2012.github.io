@@ -1,39 +1,67 @@
-element.style{}
-table, tbody td{
-    color:black;
+body {
+    width: 278px;
+    margin-left: 40px;
+
 }
-th, td{
+thead tr th {
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+  /*do not put background color here*/
+}
+
+thead {
+    font-size: 28px;
+    text-align: center;
+    background-color: #7fb9c2;
+    /*the background is not working???*/
+  }
+
+tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+    box-shadow: 6px 6px 10px #628ca6;
+}
+
+td {
     padding: 10px;
 }
-table, th, td {
-    border: 1px solid black;
+
+tbody{
+    color: black;
     text-align: center;
-    font: 15px Ubuntu, sans-serif;
-    border-spacing: 1px;
-    border-color: lightgray;
-    }
-td[attributes Style]{
-    background-color: rgb(98,140,166);
+    font-family: 'Ubuntn', sans-serif;
+    padding: 10px;
 }
-td, th {
-    display: table-cell;
-    vertical-align: inherit;
-}
-table, thead td{
+
+tr td.blackfriday {
     background-color: #628ca6;
 }
-table, thead th{
+
+.blackfriday {
+    color: white;
+}
+
+tfoot tr:nth-child(1){
     background-color: #7fb9c2;
 }
+
+tfoot {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 table, th, td {
-    border: 1px solid black;
-    border-color: lightgray;
-}
-table, tfoot td{
-    background-color: #7fb9c2;
-}
-table {
-    display: table;
-    border-collapse: separate;
-    border-color: grey;
+    border: 1px solid gray;
 }
