@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)http://127.0.0.1:59965/cit230/assignments/lesson-11/intro-jquery-files/intro-jquery-files/Lesson4/animatedMenuBegin.htm -->
+<html data-brackets-id="15982" lang="en"><head data-brackets-id="15983"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title data-brackets-id="15985">Animated Menu</title>
+	<link data-brackets-id="15986" rel="stylesheet" href="./Animated Menu_files/animatedMenu.css">
+	<!--<script src="js/jquery-2.2.1.min.js"></script>-->
+    <script data-brackets-id="15987" src="./Animated Menu_files/jquery-3.3.1.min.js.download"></script>
+	<script data-brackets-id="15988">
+	$(function(){
+		// All jQuery code goes here
+
+        $('.navigation > li').hover(function(){
+            //This code exicutes when the mouse pointer is ober the list item
+            
+            $(this).addClass('openSesame');
+            
+        }, function(){
+            //This code executes when the mouse pointer leaves the list item
+            $(this).removeClass('openSesame');
+        });
+	})
+	</script>
+</head>
+<body data-brackets-id="15989">
+	<ul data-brackets-id="15990" class="navigation">
+		<li data-brackets-id="15991" class="">About Us</li>
+		<li data-brackets-id="15992" class="">Services</li>
+		<li data-brackets-id="15993" class="">Catalog</li>
+		<li data-brackets-id="15994" class="">Blog</li>
+		<li data-brackets-id="15995" class="">Contact</li>
+	</ul>
+
+
+</body></html>

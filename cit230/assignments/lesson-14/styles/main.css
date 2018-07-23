@@ -1,2 +1,29 @@
 /* for all pages*/ 
 @media only screen and (max-width:37.5em){
+    
+    body{
+        margin:auto;
+        padding:3%;
+        font-family: , ;
+
+    }
+
+    .nav {
+        background-color: ;
+        color: ;
+        list-style: none;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    
+    .nav > li {
+        display: inline-block;
+        padding: 0 25px 0 25px;
+    }
+    
+    .nav > li > a {
+        text-decoration: none;
+        color: white;
+        
+    }
+}

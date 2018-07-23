@@ -3,3 +3,69 @@
 .hamburger{ 
     display:none;position: absolute;top: 2.0rem;right: 1.25rem;
     }
+    body{
+        margin:auto;
+        padding:3%;
+        font-family: , ;
+    }
+    .container1 div {
+        display: inline-grid;
+        grid-template-columns: repeat(10%,90%);
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 6px;
+        justify-items: left; 
+        align-items: left; 
+        grid-auto-flow: row;
+        background: #ffffff;
+        padding: 2em #ffffff;
+        word-wrap: break-word;   
+    }
+    .box2 {
+        float:center;
+        order: 2;
+    }
+    .box2>h1 {
+        font-family: merriweather, serif;
+        font-size: 60px;
+        
+    }
+    }
+    .nav {
+        background-color:#aaaaaa ;
+        color: ;
+        list-style: none;
+        text-align: center;
+        padding: 20px 0 20px 0;
+    }
+    
+    .nav > li {
+        display: inline-block;
+        padding: 0 25px 0 25px;
+    }
+    
+    .nav > li > a {
+        text-decoration: none;
+        color: white;
+        
+    }
+    .nav >li > a:hover {
+        color:#ffce00;
+    }
+    .contact {
+        display: inline-flex;
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-items: center;
+        justify-content: space-between;
+        align-items: center; 
+        background: #aaaaaa;
+        padding: 2em #ffffff;
+        word-wrap: break-word; 
+}
+    footer {
+        background-color: #aaaaaa;
+        color: #ffffff;
+        padding: 5px 5px 5px 5px;
+        align-content: center;cccc
+}
+}
