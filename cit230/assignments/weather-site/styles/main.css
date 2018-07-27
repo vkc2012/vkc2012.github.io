@@ -8,12 +8,11 @@ body {
 
 header, nav, main, footer { 
   max-width: 600px; 
-  margin: 5 auto;
+  margin: 5px auto;
 }
 
 .topimg {
-    position: absolute;
-    clip; rect(0px,50px,50px,0px)
+    position: absolute; 
     }
 header h1 {
     font-size: 22px;
@@ -30,7 +29,9 @@ img:hover {
     }
 
 .hamburger{ 
-    display: ;position: absolute;top: 2.0rem;right: 1.25rem;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
     }
     
 .nav { 
@@ -75,7 +76,7 @@ main {}
 }
 .wrapper> div{
     background:10px #ffffff ;
-    padding: 2px #ffffff ;
+    padding: 2px;
 }
 
 .wordwrap{
@@ -92,27 +93,19 @@ main figure img { }
     grid-template-columns: repeat(1,100%);
     grid-template-rows: repeat(3, auto);
     grid-gap: 30px;
-    justify-items: start; 
-    align-items: start; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 30px #ffffff;
+    padding: 30px;
     word-wrap: break-word;
-    border-style: none;
-    border-color: none;
     }
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: ;
     justify-content: flex-start;
         
     }
 .item{
-    order: <integer>;
-    flex-grow: <number>;
-    flex-shrink: <number>;
     flex-basis: auto;
     align-self: auto;
     }
@@ -120,20 +113,13 @@ main figure img { }
     display: inline-grid;
     grid-template-columns:repeat(1,100%);
     grid-template-rows: repeat(1, auto);
-    grid-gap: 6px;
-    justify-items: start; 
-    align-items: start; 
+    grid-gap: 6px; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 2em #ffffff;
+    padding: 2em;
     word-wrap: break-word;
-}
-section.forecast {
-    
 }
 
 weather-summary {
-    display: hidden;
-}
-footer{}
+    display: none;
 }
