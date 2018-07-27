@@ -12,26 +12,20 @@ img:hover {
     display: inline-grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 30px;
-    justify-items: start; 
-    align-items: start; 
+    grid-gap: 30px;; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 30px #ffffff;
+    padding: 30px;
     word-wrap: break-word;
-    border-style: none;
-    border-color: none;
     }
 .wrapperG {
     display: inline-grid;
     grid-template-columns: repeat(2,50%);
     grid-template-rows: repeat(3, auto);
     grid-gap: 6px;
-    justify-items: start; 
-    align-items: start; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 2em #ffffff;
+    padding: 2em;
     word-wrap: break-word;
 }
   }

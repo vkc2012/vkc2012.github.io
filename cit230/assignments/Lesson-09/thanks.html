@@ -3,28 +3,29 @@
 <head> 
   <meta charset="utf-8">
     <meta name="weatherpage/valerie-christiansen" content="width=device-width, initial-scale=1">
-    <title>Storm Center</title>
+    <title>The Weather Factor</title>
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <link rel="stylesheet" href="cit230/styles/normalize.css">
-    <link rel="stylesheet" href="styles/main-9.css">
-    <link rel="stylesheet" href="styles/medium-9.css">
-    <link rel="stylesheet" href="styles/large-9.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/hamburger.js"></script>
-    <script src="script/currentdate.js"></script>
+    <script src ="scripts/currentdate.js"></script>
     <script src="scripts/windhill.js"></script>
+    <script src="scripts/api.js"></script>
 
     
 </head>
 <body>
 
   <header>
-        <img src="images/franklin-original_large.jpeg" alt="Morning Sun" height="auto" width= "auto">
+        <img src="images/franklin-original_large.jpeg" alt="Morning Sun">
       	<button class="hamburger" onclick="toggleHam()">&#9776;</button>
-  <nav>
-    <ul>
-    	<li><a href="index.html">Home</a></li>
-    	<li><a href="franklin-9.html">Franklin</a></li>
+  <nav id="hamburger">
+    <ul class="navigation">
+    	<li><a href="#">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
     	<li><a href="greenville.html">Greenville</a></li>
     	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
@@ -33,21 +34,20 @@
   </nav>
 
   </header>
-
-  <main>
+ <main>
     <h1>Thank you for compleating the form.</h1>
-		  
+      <h3>Please chack back for regular updates.</h3>
   
   </main>
     
   <footer>
-    <section class="contact">
+    <section><h5>
       Contact information placeholder
       999.999.9999
       123 Main St. Anytown, US 99999
-      Google Map
+        Google Map</h5>
     </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Factor |<span id="day"></span><script>currentDay();</script>
+      <section><h5>&copy;2018 | All Rights Reserved | Weather Factor |<span id="day"></span><script>currentDay();</script></h5>
     </section>
   </footer>
 </body>

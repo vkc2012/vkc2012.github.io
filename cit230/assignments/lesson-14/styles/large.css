@@ -54,7 +54,7 @@
         align-content: center;
     }
     .contact {
-        display:inline-block;
+        display:flex;
         flex-direction: row;
         flex-basis: 100%;
         justify-content: space-between;

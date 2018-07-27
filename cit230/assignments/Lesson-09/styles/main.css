@@ -1,33 +1,37 @@
+/* for all pages*/ 
 @media only screen and (max-width:37.5em){
-
-* { box-sizing: border-box; 
-    width: 50%;
-    border: 5px solid red;
-    float: left;}  /* This wildcard applies to all elements ensuring a box layout model  */
 
 body {
   font-size: 16px;
   font-family: 'Catamaran', Sans-Serif;  /* Declare the base font-family */
 }
 
-header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer { 
   max-width: 600px; 
-  margin: 0 auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+  margin: 5px auto;
 }
 
-header {}
+.topimg {
+    position: absolute; 
+    }
 header h1 {
     font-size: 22px;
     font-family: 'Vollkorn', Serif;
 }
-header img {}
+header img {
+    margin: auto;
+    align-content: center;
+    width: 95%;
+    }
 header .subheading {}
 img:hover {
     box-shadow: none;
     }
 
 .hamburger{ 
-    display: ;position: absolute;top: 2.0rem;right: 1.25rem;
+    position: absolute;
+    top: 2.0rem;
+    right: 1.25rem;
     }
     
 .nav { 
@@ -72,7 +76,7 @@ main {}
 }
 .wrapper> div{
     background:10px #ffffff ;
-    padding: 2px #ffffff ;
+    padding: 2px;
 }
 
 .wordwrap{
@@ -89,27 +93,19 @@ main figure img { }
     grid-template-columns: repeat(1,100%);
     grid-template-rows: repeat(3, auto);
     grid-gap: 30px;
-    justify-items: start; 
-    align-items: start; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 30px #ffffff;
+    padding: 30px;
     word-wrap: break-word;
-    border-style: none;
-    border-color: none;
     }
 .container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: ;
     justify-content: flex-start;
         
     }
 .item{
-    order: <integer>;
-    flex-grow: <number>;
-    flex-shrink: <number>;
     flex-basis: auto;
     align-self: auto;
     }
@@ -117,20 +113,13 @@ main figure img { }
     display: inline-grid;
     grid-template-columns:repeat(1,100%);
     grid-template-rows: repeat(1, auto);
-    grid-gap: 6px;
-    justify-items: start; 
-    align-items: start; 
+    grid-gap: 6px; 
     grid-auto-flow: row;
     background: #ffffff;
-    padding: 2em #ffffff;
+    padding: 2em;
     word-wrap: break-word;
-}
-section.forecast {
-    
 }
 
 weather-summary {
-    display: hidden;
-}
-footer{}
+    display: none;
 }
