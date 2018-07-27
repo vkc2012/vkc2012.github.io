@@ -4,22 +4,16 @@
     body{
         margin:auto;
         padding:0;
-        font-family: , ;
+        /*font-family: , ;*/
     }
     .container1 div {
         display: inline-grid;
-        grid-template-columns: repeat(10%,90%);
-        grid-template-rows: 1, auto;
         grid-gap: 6px;
-        justify-items: left; 
-        align-items: left; 
         grid-auto-flow: row;
         background: #ffffff;
-        padding: 0;
         word-wrap: break-word;   
     }
     .box2 {
-        float:center;
         order: 2;
     }
     .box2>h1 {
@@ -55,22 +49,16 @@
         padding: 5px 5px 5px 5px;
         align-content: center;
     }
-    .contact {
+    .contact, .box3 {
         display:flex;
         flex-direction: row;
         flex-basis: 100%;
         justify-content: space-between;
         background: #aaaaaa;
-        padding: 2em #ffffff;
+        padding: 2em;
         word-wrap: break-word;
     }
-    .box3{
-        display: inline-flex;
-        justify-content: center;
-        flex:3;
-    }
+ 
     .comtact > box3 > h2 {
         font-family: merriweather, serif;
-        
     }
-  
