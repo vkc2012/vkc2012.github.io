@@ -24,6 +24,9 @@
         font-family: merriweather, serif;
         font-size: 60px;  
     }
+    .hamburger{ 
+    display: none;
+    }
    .nav {
         background-color:#aaaaaa ;
         font-family: montserrat, sans-serif;
@@ -45,6 +48,13 @@
     }
     .nav >li > a:hover {
         color:#ffce00;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat (2, auto);
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        justify-content: center;  
     }
      footer {
         display: inline-flex;
