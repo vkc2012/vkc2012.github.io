@@ -104,4 +104,23 @@
         height: 50px;
         vertical-align: middle;
     }
+    .wrapper {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 6px; 
+    grid-auto-flow: row;
+    background: #ffffff;
+    padding: 5em;
+    word-wrap: break-word;
+    }
+    .wrapper0 {
+    display: inline-flex;
+    list-style-position: inside;
+    align-content: center;
+    grid-gap: 6px; 
+    padding: 5em;
+    word-wrap: break-word;
+    }
 }
+    

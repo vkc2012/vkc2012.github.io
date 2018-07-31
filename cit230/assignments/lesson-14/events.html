@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head> 
   <meta charset="utf-8">
-   <!-- enter in tags <meta name=" " content="width=device-width, initial-scale=1"> -->
+    <meta name="The Mpountain Spoke&#44; events&#44; biking&#44; adventure&#44; trail rides" content="width=device-width, initial-scale=1"> 
     <title>Events</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">
@@ -13,16 +13,7 @@
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src ="scripts/currentdate.js"></script>
-    <script>
-        $(function{
-          //jQuerys go here...
-          })    
-        
-	           
-    </script>
-    
-
-    
+     
 </head>
 <body>
 
@@ -48,7 +39,8 @@
 
     
   <main>
-      <div>
+      <div class="wrapper">
+        <div>
         <h2>Cycle the Continental Divide</h2>
           <img src="images/william-hook-medium.jpg" alt="William Hook">
           <ul>
@@ -64,9 +56,70 @@
           <p>The Great Divide Mountain Bike Route &lpar;GDMBR&rpar; is Adventure Cycling&#39;s premier off&dash;pavement cycling route&#44; crisscrossing the Continental Divide north to south&#44; This route is defined by the word &quot;remote&#46;&quot; Its remoteness equates with spectacular terrain and scenery&#46; The entire route is basically dirt&dash;road and mountain&dash;pass riding every day&#46; In total&#44; it has over 200&#44;000 feet of elevation gain&#46;</p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d761258.5643411573!2d-115.96820425852216!3d51.19060299237409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5370ca45910c4afd%3A0xcaafaebedaac9463!2sBanff%2C+AB%2C+Canada!5e0!3m2!1sen!2sus!4v1533012547333" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32415.884036462616!2d-108.52130359945836!3d31.350697319535133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86dbbf586c0d6335%3A0x551e75b07e243f13!2sAntelope+Wells%2C+NM+88040!5e0!3m2!1sen!2sus!4v1533013038459" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-          
       </div>
       <div>
+            <form id="data" method="post" action="thanks.html">
+                <fieldset>
+                <legend>
+                    <span>REGISTRATION FORM</span>
+                </legend>
+                <label>
+                    <span>FIRST NAME&#58;</span>
+                    <input name="firstname" type="text" value placeholder="FIRST NAME" pattern="[a-zA-Z-._]{5,99}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>LAST NAME&#58;</span>
+                    <input name="lastname" type="text" value placeholder="LAST NAME" pattern="[a-zA-Z-._]{5,99}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>DATE OF BIRTH&colon;</span>
+                    <input name="birth" type="tel" value placeholder="MM/DD/YYYY" pattern="[a-zA-Z-._]{5,99}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>PHONE&colon;</span>
+                    <input name="phone" type="tel" value placeholder="###-###-####" pattern="[0-9]{10}" required>
+                </label>
+                    <br>
+                <label>
+                    <span>E&#45;MAIL&#58;</span>
+                    <input name="email" type="email" value placeholder="email@cycle.com" required>
+                </label>
+                    <br>
+                <label>
+                    <span>STREET ADDRESS&#58;</span>
+                    <input name="streetaddress" type="text" value placeholder="123 ABC STREET" pattern="[a-zA-Z-._]{5,99}" required>
+                </label>
+                    <br>
+                <label>
+                <span>APARTMENT NUMBER&#58;</span>
+                    <input name="apartmentnumber" type="text" value placeholder="A1" pattern="[a-zA-Z-._]{5,99}">
+                </label>
+                    <br>
+                <label>
+                    <span>ZIP CODE&#58;</span>
+                    <input name="zip" type="number" value placeholder="#####" required>
+                </label>
+                    <br>
+                <span>EVENT</span>
+                    <br>
+                    <input class="info" type="radio" name="event" value="cycle the continental divide">
+                    "CYCLE THE CONTINENTAL DIVIDE"
+                    <br>
+                    <input class="sinfo" type="radio" name="danger" value="trail service">
+                    "TRAIL SERVICE"
+                    <br>
+                    <input class="sinfo" type="radio" name="danger" value="mystic mountain bike race">
+                    "MYSTIC MOUNTAIN BIKE RACE"
+                    <br>
+                    <textarea class="sinfo" rows="5" cols="60" name="comment" placeholder="Please include any alergies&#44; medical conditions&#44; special accommodations and comments&#46;"></textarea>
+                     <br>
+                <a href="thankyou.html"><button type="button">RERISTER NOW</button></a> 
+            </fieldset>  
+          </form>
+    
         <h2>Trail Service</h2>
         <img src="images/girma-nigusse-medium.jpg" alt="Girma Nigusse">
         <ul>
@@ -91,7 +144,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1659.9356768848975!2d-110.91086194543959!3d45.59722005250878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53455c6e7d1f545f%3A0xbf1eef7e2856021e!2s3394+Bear+Canyon+Rd%2C+Bozeman%2C+MT+59715!5e0!3m2!1sen!2sus!4v1532989760170" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
       
-      
+      </div>
       
   </main>
     

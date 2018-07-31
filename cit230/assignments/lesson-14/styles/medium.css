@@ -73,7 +73,15 @@
     .comtact > box3 > h2 {
         font-family: merriweather, serif;   
     }
-  p {
-        word-break: wrap;
+ 
+    .wrapper {
+        display: inline-grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 6px; 
+        grid-auto-flow: row;
+        background: #ffffff;
+        padding: 5em;
+        word-wrap: break-word;
     }
 }
