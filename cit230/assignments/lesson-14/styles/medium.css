@@ -71,8 +71,9 @@
         flex:3;
     }
     .comtact > box3 > h2 {
-        font-family: merriweather, serif;
-        
+        font-family: merriweather, serif;   
     }
-  
+  p {
+        word-break: wrap;
+    }
 }

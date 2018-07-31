@@ -91,4 +91,17 @@
         align-content: center;
         align-self: center;
     }
+    p {
+        word-break: wrap;
+    }
+    table {
+        
+    }
+    table, tr, td {
+        border: 2px solid #aaaaaa;
+    }
+    td {
+        height: 50px;
+        vertical-align: middle;
+    }
 }
