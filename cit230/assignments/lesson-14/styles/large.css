@@ -3,12 +3,13 @@
 .hamburger{ 
     display:none;position: absolute;top: 2.0rem;right: 1.25rem;
     }
-    body{
-        margin:auto;
-        padding:0;
-        /*font-family: , ;*/
+    h1, h2 {
+        font-family: ‘Merriweather’, serif;
     }
-    .container1 div {
+    h3, h4, h5, h6, p {
+        font-family: ‘Montserrat’, sans-serif;
+    }
+     .container1 div {
         display: inline-grid;
         grid-gap: 6px;
         grid-auto-flow: row;
@@ -29,7 +30,7 @@
     }
    .nav {
         background-color:#aaaaaa ;
-        font-family: montserrat, sans-serif;
+        font-family: ‘Montserrat’, sans-serif;
         color: #ffffff;
         list-style: none;
         text-align: center;
@@ -51,7 +52,7 @@
     }
     .grid {
         display: grid;
-        grid-template-columns: repeat (2, auto);
+        grid-template-columns: (2, auto);
         grid-template-rows: auto;
         grid-gap: 5px;
         justify-content: center;  

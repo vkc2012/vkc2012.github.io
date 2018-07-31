@@ -1,10 +1,10 @@
 /* for all pages*/ 
 @media only screen and (max-width:37.5em){
-    
-    body {
-        margin:auto;
-        padding:0;
-        /*font-family: , ;*/
+    h1, h2 {
+        font-family: ‘Merriweather’, serif;
+    }
+    h3, h4, h5, h6, p {
+        font-family: ‘Montserrat’, sans-serif;
     }
     .container1 div {
         display: inline-grid;
@@ -17,7 +17,7 @@
         order: 2;
     }
     .box2>h1 {
-        font-family: merriweather, serif;
+        font-family: ‘Merriweather’, serif;
         font-size: 60px;  
     }
     .hamburger{ 
